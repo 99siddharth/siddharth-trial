@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    int m1,m2,m3,m4,x;
+    float avg;
+    printf("Enter the marks of 4 subjects: ");
+    scanf("%d %d %d %d",&m1,&m2,&m3,&m4);
+    avg=(m1+m2+m3+m4)/4;
+    if(avg>=90)
+    {
+        //printf("Congratulations, you have secured A grade");
+        x=1;
+        
+    }
+        else if(avg>=75)
+        {
+            //printf("Congratulations, you have secured B grade");
+            x=2;
+        }
+            else if(avg>=60)
+            {
+               // printf("Good, you have secured C grade");
+               x=3; 
+            }
+            else if(avg>=35)
+                {
+                    //printf("Good, you have secured D grade");
+                    x=3;
+                }   
+                else
+                {   x=4;
+                }
+    
+    switch(x)
+    {
+        case 1:
+            {   printf(" Congratulations A grade");
+            }
+        case 2:
+            {   printf(" Congratulations B grade");
+            }
+        case 3:
+            {   printf(" Good C/D grade");
+            }
+        case 4:
+            {   printf("Better luck next time");
+            }
+            
+    }
+}
